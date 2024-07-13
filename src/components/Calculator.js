@@ -29,11 +29,13 @@ export default function Calculator() {
       months += 12;
     }
 
-    years < 0
-      ? setAge(`Birthday is Invalid!`)
-      : setAge(
-          `Your age is ${years} years, ${months} months, and ${days} days`
-        );
+    if (years < 0) {
+      setAge(`Birthday is Invalid!`);
+    } else if (isNaN(years)) {
+      setAge(`Birthday is Empty!`);
+    } else {
+      setAge(`Your are ${years} years, ${months} months, and ${days} days old!`);
+    }
   };
 
   return (
