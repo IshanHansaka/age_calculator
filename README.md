@@ -1,7 +1,7 @@
 # Age Calculator Web Application
 
 This web application calculates your age based on the entered birthdate and displays the result along with a GIF corresponding to your age group. 
-You can access the app [here](https://ishanhansaka.github.io/age_calculator/).
+You can access the app, visit: [Age Calculator](https://ishanhansaka.github.io/tic-tac-toe/).
 
 ## Features
 
