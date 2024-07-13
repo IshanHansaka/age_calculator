@@ -28,6 +28,7 @@ p {
 
 .cal-form form p {
   font-size: 35px;
+  color: #468585;
 }
 
 .cal-input {
@@ -41,7 +42,7 @@ p {
 
 .cal-input .submit {
   width: 100px;
-  background-color: #21479a;
+  background-color: #468585;
   color: #ffffff;
   border: none;
   border-radius: 10px;
