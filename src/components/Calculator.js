@@ -39,7 +39,7 @@ export default function Calculator() {
   };
 
   return (
-    <div className="container">
+    <>
       <div className="cal-topic">
         <p>AGE CALCULATOR</p>
       </div>
@@ -57,6 +57,6 @@ export default function Calculator() {
         </form>
       </div>
       <div className="cal-age">{age}</div>
-    </div>
+    </>
   );
 }
