@@ -3,7 +3,6 @@ import "../styles/Calculator.css";
 
 export default function Calculator({ onSubmitClick, setAge }) {
   const [date, setDate] = useState("");
-  const [age, setAge] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -58,7 +57,6 @@ export default function Calculator({ onSubmitClick, setAge }) {
           </div>
         </form>
       </div>
-      <div className="cal-age">{age}</div>
     </>
   );
 }
