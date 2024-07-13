@@ -6,6 +6,7 @@ p {
   height: 100px;
   display: flex;
   align-items: center;
+  color: #146e6e;
 }
 
 .cal-topic p {
