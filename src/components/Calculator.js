@@ -17,14 +17,23 @@ export default function Calculator() {
 
     if (days < 0) {
       months--;
-      days += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+      days += new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        0
+      ).getDate();
     }
+
     if (months < 0) {
       years--;
       months += 12;
     }
-
-    setAge(`${years} years, ${months} months, and ${days} days`);
+    
+    years < 0
+      ? setAge(`Birthday is Invalid!`)
+      : setAge(
+          `Your age is ${years} years, ${months} months, and ${days} days`
+        );
   };
 
   return (
@@ -42,7 +51,7 @@ export default function Calculator() {
           <input type="submit" />
         </form>
       </div>
-      <div className="cal-age">Your Age = {age}</div>
+      <div className="cal-age">{age}</div>
     </div>
   );
 }
