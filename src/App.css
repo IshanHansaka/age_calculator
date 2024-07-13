@@ -1,11 +1,12 @@
 .App {
-  background-color: #9CDBA6;
+  background-color: #9cdba6;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
   background-color: #ffffff;
   border-radius: 10px;
@@ -16,4 +17,161 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  .container {
+    transform: scale(0.95);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 665px) {
+  .container {
+    transform: scale(0.9);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    transform: scale(0.85);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 595px) {
+  .container {
+    transform: scale(0.8);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    transform: scale(0.75);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 525px) {
+  .container {
+    transform: scale(0.7);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 490px) {
+  .container {
+    transform: scale(0.65);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 455px) {
+  .container {
+    transform: scale(0.6);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    transform: scale(0.55);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 385px) {
+  .container {
+    transform: scale(0.5);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    transform: scale(0.45);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 315px) {
+  .container {
+    transform: scale(0.4);
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    transform: scale(0.35);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 245px) {
+  .container {
+    transform: scale(0.3);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 210px) {
+  .container {
+    transform: scale(0.25);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 175px) {
+  .container {
+    transform: scale(0.2);
+    margin-top: 10px;
+  }
+  .App {
+    align-items: flex-start;
+  }
 }
