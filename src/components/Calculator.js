@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Calculator.css";
 
-export default function Calculator() {
+export default function Calculator({ onSubmitClick, setAge }) {
   const [date, setDate] = useState("");
   const [age, setAge] = useState("");
 
@@ -36,6 +36,8 @@ export default function Calculator() {
     } else {
       setAge(`Your are ${years} years, ${months} months, and ${days} days old!`);
     }
+
+    onSubmitClick();
   };
 
   return (
