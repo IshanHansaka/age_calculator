@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "../styles/Calculator.css";
 
-export default function Calculator({ onSubmitClick, setAge }) {
+export default function Calculator({
+  onSubmitClick,
+  setDay,
+  setMonth,
+  setYear,
+}) {
   const [date, setDate] = useState("");
 
   const handleSubmit = (event) => {
@@ -28,13 +33,9 @@ export default function Calculator({ onSubmitClick, setAge }) {
       months += 12;
     }
 
-    if (years < 0) {
-      setAge(`Birthday is Invalid!`);
-    } else if (isNaN(years)) {
-      setAge(`Birthday is Empty!`);
-    } else {
-      setAge(`Your are ${years} years, ${months} months, and ${days} days old!`);
-    }
+    setDay(days);
+    setMonth(months);
+    setYear(years);
 
     onSubmitClick();
   };
