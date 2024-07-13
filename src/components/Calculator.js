@@ -28,7 +28,7 @@ export default function Calculator() {
       years--;
       months += 12;
     }
-    
+
     years < 0
       ? setAge(`Birthday is Invalid!`)
       : setAge(
@@ -38,17 +38,20 @@ export default function Calculator() {
 
   return (
     <div className="container">
-      <div className="cal-topic">AGE CALCULATOR</div>
+      <div className="cal-topic">
+        <p>AGE CALCULATOR</p>
+      </div>
       <div className="cal-form">
         <form onSubmit={handleSubmit}>
-          <p>Enter your Birthday</p>
-          <label>Date :</label>
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-          <input type="submit" />
+          <p>Enter your Birthday :</p>
+          <div className="cal-input">
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            />
+            <input type="submit" className="submit" />
+          </div>
         </form>
       </div>
       <div className="cal-age">{age}</div>
