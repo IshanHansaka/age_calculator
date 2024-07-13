@@ -1,9 +1,17 @@
 .res-gif {
-height: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .res-age {
-    height: 100px;
-    font-size: 37px;
-    text-align: center;
+  height: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 280px;
 }
