@@ -9,3 +9,62 @@
   justify-content: center;
   align-items: center;
 }
+
+p {
+  margin: 0;
+}
+
+.cal-topic {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.cal-topic p {
+  font-size: 50px;
+}
+
+.cal-form {
+  height: 200px;
+}
+
+.cal-form form {
+  display: flex;
+  width: 800px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cal-form form p {
+  font-size: 35px;
+}
+
+.cal-input {
+  display: flex;
+  gap: 10px;
+}
+
+.cal-input input{
+  font-size: 25px;
+}
+
+.cal-input .submit {
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 8px 8px 19.9px 1px #00000040;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.cal-input .submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.cal-age {
+  height: 100px;
+  font-size: 40px;
+}
